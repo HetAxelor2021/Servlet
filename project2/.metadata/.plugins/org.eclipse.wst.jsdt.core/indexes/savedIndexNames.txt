@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/var/home/axelor/hetul/servlet/metadata/project2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2029808103.index
+2901836953.index
+1704374323.index
+3666412148.index
+583360974.index
+2710363012.index
+2286851022.index
