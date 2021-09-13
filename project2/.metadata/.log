@@ -32,3 +32,84 @@ Binding(CTRL+SHIFT+T,
 
 !ENTRY org.eclipse.ui.navigator 2 0 2021-09-11 18:35:23.911
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+!SESSION 2021-09-13 17:59:12.770 -----------------------------------------------
+eclipse.buildId=4.20.0.I20210611-1600
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data /var/home/axelor/hetul/servlet/metadata/project2 -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2021-09-13 17:59:16.399
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-13 17:59:16.399
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4088c5e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e757f39,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-09-13 17:59:21.865
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-09-13 17:59:21.866
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2021-09-14 00:57:01.063
+!MESSAGE exception locating element declaration for servlet-name/servlet-name@[297, 311] (<servlet-name>)@[314, 329] (</servlet-name>)
+!STACK 0
+java.util.ConcurrentModificationException
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.checkModCount(AbstractEList.java:751)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.doNext(AbstractEList.java:699)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.next(AbstractEList.java:685)
+	at org.eclipse.emf.common.notify.impl.AdapterFactoryImpl.adapt(AdapterFactoryImpl.java:80)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$XSDAdapterFactoryImpl.adapt(XSDImpl.java:706)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl.getAdapter(XSDImpl.java:612)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$LocalElementVisitor.visitElementDeclaration(XSDImpl.java:3242)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticleContent(XSDVisitor.java:182)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticle(XSDVisitor.java:156)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$XSDCMVisitor.visitModelGroup(XSDImpl.java:3178)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$XSDCMVisitor.visitModelGroupDefinition(XSDImpl.java:3188)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticleContent(XSDVisitor.java:172)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticle(XSDVisitor.java:156)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$XSDCMVisitor.visitModelGroup(XSDImpl.java:3178)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$XSDCMVisitor.visitModelGroupDefinition(XSDImpl.java:3188)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticleContent(XSDVisitor.java:172)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticle(XSDVisitor.java:156)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$XSDCMVisitor.visitModelGroup(XSDImpl.java:3178)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticleContent(XSDVisitor.java:178)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitParticle(XSDVisitor.java:156)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitComplexTypeDefinition(XSDVisitor.java:149)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDVisitor.visitTypeDefinition(XSDVisitor.java:96)
+	at org.eclipse.wst.xsd.contentmodel.internal.XSDImpl$ElementDeclarationBaseImpl.getLocalElements(XSDImpl.java:1862)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.XMLAssociationProvider.getCMElementDeclaration(XMLAssociationProvider.java:349)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.XMLAssociationProvider.getCMElementDeclaration(XMLAssociationProvider.java:225)
+	at org.eclipse.wst.xml.core.internal.contentmodel.modelqueryimpl.ModelQueryImpl.getCMElementDeclaration(ModelQueryImpl.java:118)
+	at org.eclipse.wst.xml.ui.internal.spelling.SpellcheckDelegateAdapterFactory$XMLSpellcheckDelegate.shouldSpellcheck(SpellcheckDelegateAdapterFactory.java:66)
+	at org.eclipse.wst.sse.ui.internal.spelling.SpellcheckStrategy.shouldSpellcheck(SpellcheckStrategy.java:419)
+	at org.eclipse.wst.sse.ui.internal.spelling.SpellcheckStrategy.isInterestingProblem(SpellcheckStrategy.java:249)
+	at org.eclipse.wst.sse.ui.internal.spelling.SpellcheckStrategy$SpellingProblemCollector.accept(SpellcheckStrategy.java:85)
+	at org.eclipse.jdt.internal.ui.text.spelling.SpellingEngine$SpellEventListener.handle(SpellingEngine.java:78)
+	at org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultSpellChecker.execute(DefaultSpellChecker.java:248)
+	at org.eclipse.jdt.internal.ui.text.spelling.TextSpellingEngine.check(TextSpellingEngine.java:44)
+	at org.eclipse.jdt.internal.ui.text.spelling.SpellingEngine.check(SpellingEngine.java:95)
+	at org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine.check(DefaultSpellingEngine.java:79)
+	at org.eclipse.ui.texteditor.spelling.SpellingService$1.run(SpellingService.java:108)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.texteditor.spelling.SpellingService.check(SpellingService.java:114)
+	at org.eclipse.wst.sse.ui.internal.spelling.SpellcheckStrategy.spellCheck(SpellcheckStrategy.java:337)
+	at org.eclipse.wst.sse.ui.internal.spelling.SpellcheckStrategy.reconcile(SpellcheckStrategy.java:380)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.endProcessing(DocumentRegionProcessor.java:134)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:700)

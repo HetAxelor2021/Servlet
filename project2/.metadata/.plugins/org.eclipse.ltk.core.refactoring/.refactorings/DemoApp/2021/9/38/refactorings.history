@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.hh.SqlServlet&apos; to &apos;SqServlet&apos;&#x0A;- Original project: &apos;DemoApp&apos;&#x0A;- Original element: &apos;com.hh.SqlServlet&apos;&#x0A;- Renamed element: &apos;com.hh.SqServlet&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SqlServlet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.hh{SqlServlet.java[SqlServlet" matchStrategy="1" name="SqServlet" qualified="false" references="true" similarDeclarations="false" stamp="1631561367396" textual="false" version="1.0"/>
+</session>
