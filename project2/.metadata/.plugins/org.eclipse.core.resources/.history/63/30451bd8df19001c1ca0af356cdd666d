@@ -32,7 +32,7 @@ public class AddServlet extends HttpServlet{
 		HttpSession session = req.getSession();
 		session.setAttribute("k", k);
 		
-		res.sendRedirect("sq");
+		res.sendRedirect("sq"+k);
 		
 		
 //		req.setAttribute("k", k);
