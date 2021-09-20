@@ -48,8 +48,8 @@ public class IdFilter implements Filter {
 		HttpServletRequest req = (HttpServletRequest) request;
 		
 		int aid = Integer.parseInt(request.getParameter("aid"));
-		
-		if(aid>1)
+		String aname= request.getParameter("aname");
+		if(aid>1 && aname.length()>1)
 			chain.doFilter(request, response);
 		else
 			out.print("Invalid Input");
