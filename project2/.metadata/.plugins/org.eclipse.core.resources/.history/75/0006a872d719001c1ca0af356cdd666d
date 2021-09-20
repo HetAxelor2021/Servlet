@@ -28,7 +28,7 @@ public class AddServlet extends HttpServlet{
 		int k = i+j;
 //		k *=k;
 		
-		res.sendRedirect("sq?k="+k);
+		res.sendRedirect("sq");
 		
 		
 //		req.setAttribute("k", k);
