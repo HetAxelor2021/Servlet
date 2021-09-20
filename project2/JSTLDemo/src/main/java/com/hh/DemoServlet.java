@@ -20,11 +20,11 @@ public class DemoServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //		String name= "Hetul";
 		
-		List<Student> studs = Arrays.asList(new Student(1,"Hetul"),new Student(2,"Hardik"),new Student(3,"Dilip"));
+//		List<Student> studs = Arrays.asList(new Student(1,"Hetul"),new Student(2,"Hardik"),new Student(3,"Dilip"));
 		
 		
-		Student s = new Student(1 , "Hetul");
-		request.setAttribute("students", studs);
+//		Student s = new Student(1 , "Hetul");
+//		request.setAttribute("students", studs);
 		
 		
 		
