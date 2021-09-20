@@ -34,8 +34,8 @@ public class AddServlet extends HttpServlet{
 		res.addCookie(cookie);
 		
 		
-//		HttpSession session = req.getSession();
-//		session.setAttribute("k", k);
+		HttpSession session = req.getSession();
+		session.setAttribute("k", k);
 		
 		res.sendRedirect("sq");
 		

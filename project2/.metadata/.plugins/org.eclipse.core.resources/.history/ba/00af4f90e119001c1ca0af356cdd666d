@@ -19,7 +19,6 @@ public class SqServlet extends HttpServlet {
 //		
 //		int k = (int)session.getAttribute("k");
 		
-		int k = 0;
 		
 		Cookie cookies[]  = req.getCookies();
 		
@@ -28,6 +27,7 @@ public class SqServlet extends HttpServlet {
 				k = Integer.parseInt(c.getValue());
 		}
 		
+		int k = 0;
 		
 		
 		k = k*k;
