@@ -3,7 +3,6 @@
   <servlet>
   	<servlet-name>abc</servlet-name>
   	<servlet-class>com.hh.AddServlet</servlet-class>
-  	
   </servlet>
   
   <servlet-mapping>
@@ -24,10 +23,6 @@
   <servlet>
   	<servlet-name>xyz</servlet-name>
   	<servlet-class>com.hh.MyServlet</servlet-class>
-  	<init-param>
-  		<param-name>name</param-name>
-  		<param-value>Hardik</param-value>
-  	</init-param>
   </servlet>
   
   <servlet-mapping>
