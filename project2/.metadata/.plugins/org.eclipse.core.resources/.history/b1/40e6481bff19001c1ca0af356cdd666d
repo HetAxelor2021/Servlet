@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" errorPage="error.jsp" %>
+    pageEncoding="UTF-8" %>
     
 <%@ page import = "java.util.ArrayList" %>
 <%@ include file="header.jsp" %>
@@ -11,8 +11,6 @@
 </head>
 <body>
 <%--
---%> 
-
 	<%
 	
 		int k = 9/0;
@@ -23,6 +21,8 @@
 		pageContext.setAttribute("name", "hetul", PageContext.SESSION_SCOPE);
 		
 	%>
+--%> 
+
 
 
 
