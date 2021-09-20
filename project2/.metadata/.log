@@ -2842,3 +2842,16 @@ Java Model Exception: Java Model Status [DemoServlet does not exist]
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1435)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-09-20 16:49:11.068
 !MESSAGE DemoServlet does not exist
+
+!ENTRY org.eclipse.wst.sse.ui 4 4 2021-09-20 18:08:15.386
+!MESSAGE Cannot invoke "org.eclipse.wst.sse.ui.internal.reconcile.validator.AnnotationInfo.getMessage()" because "info" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.wst.sse.ui.internal.reconcile.validator.AnnotationInfo.getMessage()" because "info" is null
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.createAnnotations(ReconcileStepForValidator.java:94)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:254)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
