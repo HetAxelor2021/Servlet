@@ -34,21 +34,28 @@ public class AddServlet extends HttpServlet{
 		int k = i+j;
 //		k *=k;
 		
-		Cookie cookie = new Cookie("k",k+"");
-		res.addCookie(cookie);
 		
 		
-//		HttpSession session = req.getSession();
-//		session.setAttribute("k", k);
 		
-		res.sendRedirect("sq");
+//		Cookie cookie = new Cookie("k",k+"");
+//		res.addCookie(cookie);
+//		
+//		
+////		HttpSession session = req.getSession();
+////		session.setAttribute("k", k);
+//		
+//		res.sendRedirect("sq");
 		
 		
 //		req.setAttribute("k", k);
-//		PrintWriter out = res.getWriter();
-//		
-//		out.println("result is "+ k);
+		PrintWriter out = res.getWriter();
 		
+		out.println("<html><body bgcolor='cyan'>");
+		out.println("Output : "+k);
+		out.println("</body></html>");
+////		
+//		out.println("result is "+ k);
+//		
 //		
 //		//Req dispatcher and redirect
 //		RequestDispatcher rd = req.getRequestDispatcher("sq");
