@@ -1,7 +1,0 @@
-package com.hh;
-
-import javax.servlet.http.HttpServlet;
-
-public class SqlServlet extends HttpServlet {
-
-}
