@@ -8,6 +8,11 @@
 </head>
 <body>
 	<%
+		response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
+		
+		response.setHeader("Pragma", "no-cache"); //http 1.0
+		
+		response.setHeader("Expires" , "0"); //Proxies
 	
 		if(session.getAttribute("username")==null)
 		{
@@ -15,6 +20,6 @@
 		}
 	
 	%>
-	https://www.youtube.com/watch?v=OuBUUkQfBYM
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/OuBUUkQfBYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
